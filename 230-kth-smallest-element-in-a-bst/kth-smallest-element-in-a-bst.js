@@ -12,9 +12,6 @@
  * @return {number}
  */
 var kthSmallest = function(root, k) {
-    
-
-
     let c = 0;
     let res = 0
     const dfs = (n) => {
