@@ -20,6 +20,7 @@ var swapNodes = function(head, k) {
         x++;
         if(x == k){
             first = c
+
         }
         st.push(c)
         c = c.next 
@@ -32,6 +33,7 @@ var swapNodes = function(head, k) {
             let t = c.val
             c.val = first.val
             first.val = t
+            break
         }
     }
     return head;
