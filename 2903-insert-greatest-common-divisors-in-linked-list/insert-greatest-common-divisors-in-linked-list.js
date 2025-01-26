@@ -26,19 +26,15 @@ const gcd = (num1, num2) => {
 
 }
 var insertGreatestCommonDivisors = function(head) {
-    
     let c = head
     let prev = null
     while(c) {
-
         if(prev !==null) {
             let intermediat = gcd(prev.val, c.val);
             let n = new  ListNode(intermediat);
             prev.next = n;
             n.next = c;
-
         }
-
         prev = c;
         c = c.next;
     }
